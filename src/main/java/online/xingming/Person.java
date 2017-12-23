@@ -14,7 +14,7 @@ public class Person {
     private String pid; //省份
     private String cid; //城市
     private Integer sex;//男女
-    private boolean zty=false;//是否考虑太阳真子实
+    private Integer zty=0;//是否考虑太阳真子实
     private Integer wxxy=0;//是否自动分析喜用神
 
 
@@ -98,11 +98,11 @@ public class Person {
         this.sex = sex;
     }
 
-    public boolean isZty() {
+    public Integer isZty() {
         return zty;
     }
 
-    public void setZty(boolean zty) {
+    public void setZty(Integer zty) {
         this.zty = zty;
     }
 

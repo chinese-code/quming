@@ -18,7 +18,7 @@ public enum Wuxin {
         if(火.toString().equals(str)){
             return 火;
         }
-        if(土.toString()==str){
+        if(土.toString().equals(str)){
             return 土;
         }
         return null;

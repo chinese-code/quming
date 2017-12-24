@@ -41,7 +41,7 @@ public class XingmingOnlineScore extends AbstractOnlineScore {
     public void post() {
         try {
             Map<String, String> requestParam = getRequestParam();
-            Thread.sleep(3000);
+//            Thread.sleep(1000);
             this.header.put(" User-Agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1");
             Document post = Jsoup.connect(this.url).data(requestParam).cookies(cookies).headers(this.header).post();
             this.document = post;

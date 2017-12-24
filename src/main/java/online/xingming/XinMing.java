@@ -7,37 +7,37 @@ import java.util.List;
 /**
  * Created by tumingjian on 2017/12/23.
  */
-public class XingMing {
-    private List<WuxinProperty> xingmingWuxins;
-    private String xing;
+public class XinMing {
+    private List<WuxinProperty> xinmingWuxins;
+    private String xin;
     private String ming;
     private Double score;
     private Double wugeScore;
-    public XingMing() {
+    public XinMing() {
     }
 
-    public XingMing(List<WuxinProperty> xingmingWuxins, String xing, String ming, Double score,Double wugeScore) {
-        this.xingmingWuxins = xingmingWuxins;
-        this.xing = xing;
+    public XinMing(List<WuxinProperty> xinmingWuxins, String xin, String ming, Double score, Double wugeScore) {
+        this.xinmingWuxins = xinmingWuxins;
+        this.xin = xin;
         this.ming = ming;
         this.score = score;
         this.wugeScore=wugeScore;
     }
 
-    public List<WuxinProperty> getXingmingWuxins() {
-        return xingmingWuxins;
+    public List<WuxinProperty> getXinmingWuxins() {
+        return xinmingWuxins;
     }
 
-    public void setXingmingWuxins(List<WuxinProperty> xingmingWuxins) {
-        this.xingmingWuxins = xingmingWuxins;
+    public void setXinmingWuxins(List<WuxinProperty> xinmingWuxins) {
+        this.xinmingWuxins = xinmingWuxins;
     }
 
-    public String getXing() {
-        return xing;
+    public String getXin() {
+        return xin;
     }
 
-    public void setXing(String xing) {
-        this.xing = xing;
+    public void setXin(String xin) {
+        this.xin = xin;
     }
 
     public String getMing() {

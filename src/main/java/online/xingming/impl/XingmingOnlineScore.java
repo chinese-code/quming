@@ -46,8 +46,10 @@ public class XingmingOnlineScore extends AbstractOnlineScore {
             Document post = Jsoup.connect(this.url).data(requestParam).cookies(cookies).headers(this.header).post();
             this.document = post;
             List<String> strings = this.document.body().select(".progress-bar").eachText();
-            this.score = Double.valueOf(strings.get(1).replace("分", "").trim());
-            this.wugeScore = Double.valueOf(strings.get(0).replace("分", "").trim());
+            if (strings.size() > 0) {
+                this.score = Double.valueOf(strings.get(1).replace("分", "").trim());
+                this.wugeScore = Double.valueOf(strings.get(0).replace("分", "").trim());
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
